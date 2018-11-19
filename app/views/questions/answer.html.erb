@@ -1,0 +1,19 @@
+<% if params[:question] == "I am going to work" %>
+<% @answer = "Great!"  %>
+<% elsif params[:question].end_with? '?' %>
+<% @answer = "Silly question, get dressed and go to work!" %>
+<% else @answer = "I don't care, get dressed and go to work!"  %>
+<% end %>
+
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <div class="textbox you">
+    <p><%=params[:question]%></p>
+    <p class="speaker"> - You</p>
+  </div>
+  <div class="textbox coach">
+    <p class="coach-answer"><%=@answer%></p>
+    <p class="speaker">- Your coach</p>
+  </div>
+  <%=link_to "Ask another question", "http://localhost:3000/ask"%>
+</div>

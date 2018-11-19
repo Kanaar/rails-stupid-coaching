@@ -1,0 +1,42 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  width:600px;
+  height:300px;
+  margin-top: -150px;
+  margin-left: -300px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.form{ display: inline-block; }
+
+.formfield {
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid #D3D3D3;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  width: 300px;
+}
+
+.textbox {
+  border-left: 4px solid #D3D3D3;
+  border-right: 4px solid #D3D3D3;
+  padding: 8px;
+  margin: 16px;
+}
+
+.coach { background-color:  #ffffe6; }
+
+.coach-answer {font-weight: bold}
+.speaker {font-style: italic}
